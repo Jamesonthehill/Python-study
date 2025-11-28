@@ -25,3 +25,11 @@ i = 124
 # even if we assign the i value, if we use again, it would be overwritten.
 for i in range(3):
         print('Hello', i+3)
+
+
+print (range(3))
+
+name_list = ['jacob', 'Lee', 'hanse']
+
+for name in name_list:
+    print(name)
