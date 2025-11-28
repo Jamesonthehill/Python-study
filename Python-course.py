@@ -1,3 +1,4 @@
 Integer = 11
+Alpha = 'Mario'
 
-print(Integer)
+print(Alpha + str(Integer))
