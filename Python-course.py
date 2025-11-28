@@ -33,3 +33,25 @@ name_list = ['jacob', 'Lee', 'hanse']
 
 for name in name_list:
     print(name)
+
+while True:
+      user_input = input('entersometing >>')
+      if user_input == '0':
+            print('we are done here')
+            break
+      
+
+def say_hello(name):
+      print('Hey there', name)
+
+say_hello('mario')
+
+def get_internet():
+      pass
+
+number = input('Please provide a number >>')
+
+try:
+    print(10 + int(number))
+except:
+    print('that is not a valid number!')
