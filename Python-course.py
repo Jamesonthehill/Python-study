@@ -41,17 +41,24 @@ while True:
             break
       
 
-def say_hello(name):
-      print('Hey there', name)
+# def say_hello(name):
+#       print('Hey there', name)
 
-say_hello('mario')
+# say_hello('mario')
 
-def get_internet():
-      pass
+# def get_internet():
+#       pass
 
-number = input('Please provide a number >>')
+# number = input('Please provide a number >>')
 
-try:
-    print(10 + int(number))
-except:
-    print('that is not a valid number!')
+# try:
+#     print(10 + int(number))
+# except:
+#     print('that is not a valid number!')
+
+
+
+num1 = [1,2,3]
+num2 = [4,5,6]
+merge_array = num1 + num2
+print(merge_array)
