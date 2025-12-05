@@ -56,9 +56,3 @@ while True:
 # except:
 #     print('that is not a valid number!')
 
-
-
-num1 = [1,2,3]
-num2 = [4,5,6]
-merge_array = num1 + num2
-print(merge_array)
