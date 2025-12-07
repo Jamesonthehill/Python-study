@@ -94,6 +94,18 @@ print(alphaka)
 #             else:
 #                 nums[i] == nums[i]
 #                 i -= 1
+# Second way using For clause.
+# i = len(nums)
+# j = len(nums) - 1
+
+# for a in range(i):
+#     if nums[j] != val:
+#         i -= 1
+#         j -= 1
+#     else:
+#         del nums[j]
+#         i -= 1
+#         j -= 1
 
 J = 10 
 
