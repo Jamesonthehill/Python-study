@@ -29,16 +29,16 @@ for i in range(3):
 
 print (range(3))
 
-name_list = ['jacob', 'Lee', 'hanse']
+# name_list = ['jacob', 'Lee', 'hanse']
 
-for name in name_list:
-    print(name)
+# for name in name_list:
+#     print(name)
 
-while True:
-      user_input = input('entersometing >>')
-      if user_input == '0':
-            print('we are done here')
-            break
+# while True:
+#       user_input = input('entersometing >>')
+#       if user_input == '0':
+#             print('we are done here')
+#             break
       
 
 # def say_hello(name):
@@ -94,3 +94,14 @@ print(alphaka)
 #             else:
 #                 nums[i] == nums[i]
 #                 i -= 1
+
+J = 10 
+
+for o in range(J):
+    print(o)
+
+
+jacob = [10, 20, 30]
+
+for x in range(len(jacob)):
+    print(jacob[x])
