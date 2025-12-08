@@ -107,13 +107,20 @@ print(alphaka)
 #         i -= 1
 #         j -= 1
 
-J = 10 
+# J = 10 
 
-for o in range(J):
-    print(o)
+# for o in range(J):
+#     print(o)
 
 
-jacob = [10, 20, 30]
+# jacob = [10, 20, 30]
 
-for x in range(len(jacob)):
-    print(jacob[x])
+# for x in range(len(jacob)):
+#     print(jacob[x])
+
+num = [0, 1, 1, 2, 3, 3, 3, 4]
+
+i = 0 
+
+for i in range(len(num)):
+    print(i)
