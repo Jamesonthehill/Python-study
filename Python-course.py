@@ -118,9 +118,32 @@ print(alphaka)
 # for x in range(len(jacob)):
 #     print(jacob[x])
 
-num = [0, 1, 1, 2, 3, 3, 3, 4]
+nums = [0, 0, 1, 1, 2, 2, 3, 3, 3, 4]
 
-i = 0 
+# print("==============")
+# for i in range(len(num33)):
+#     j = i + 1
+#     for j in range(len(num33)):
+#         print(i, j)
 
-for i in range(len(num)):
-    print(i)
+
+print("========duplicate removal======")
+
+def duplicateRemove(nums):
+    i = 0 
+    for j in range(1,len(nums)):
+        if nums[i] != nums[j]:
+            i += 1
+            nums[i] = nums[j]
+    return i + 1
+
+example = [1,1,2,2,2,2,3,3,3,3,4,4,5,6,7]
+k = duplicateRemove(example)
+print(k)
+print(nums[:k])
+print(nums[:i])
+
+
+
+assert example == [1,1,2,2,2,2,3,3,3,3,4,4,5,6,7]
+raise AssertionError("Mismatch")
