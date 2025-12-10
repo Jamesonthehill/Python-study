@@ -78,7 +78,7 @@ print(merge_array)
 #         j -= 1
 #     k -= 1
 
-## Leetscode Remove Element
+############## Leetscode Remove Element
 alpha = [1, 2]
 alphaka = len(alpha)
 print(alphaka)
@@ -106,6 +106,15 @@ print(alphaka)
 #         del nums[j]
 #         i -= 1
 #         j -= 1
+
+# thrid way using For clause with different approach.
+#        i = 0 
+
+#         while i < len(nums):
+#             if nums[i] == val:
+#                 del nums[i]
+#             else:
+#                 i += 1
 
 # J = 10 
 
