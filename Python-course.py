@@ -150,9 +150,20 @@ example = [1,1,2,2,2,2,3,3,3,3,4,4,5,6,7]
 k = duplicateRemove(example)
 print(k)
 print(nums[:k])
-print(nums[:i])
 
 
 
-assert example == [1,1,2,2,2,2,3,3,3,3,4,4,5,6,7]
-raise AssertionError("Mismatch")
+# assert example == [1,1,2,2,2,2,3,3,3,3,4,4,5,6,7]
+# raise AssertionError("Mismatch")
+
+
+    i = 0
+    while i > len(nums):
+        j = i + 1
+        while j > len(nums):
+            if nums[i] == nums[j]:
+                if nums[i] == nums[i-1]:
+                    del nums[j]
+                else:
+                    j += 1
+        i += 1
