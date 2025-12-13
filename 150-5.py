@@ -17,7 +17,7 @@ class Solution:
 
         return candidate
 
-print(candidate := Solution().majorityElement([2,2,1,1,1,2,2,1,1,3,3,3])) 
+print(candidate := Solution().majorityElement([2,2,1,1,1,2,2,1,1,3,1,3,1])) 
 # nums = [1]
 # i = 0 
 # final = 0
