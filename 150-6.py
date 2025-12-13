@@ -1,15 +1,8 @@
         
-nums =[2,2,1,1,1,2,2]
-candidate = None
-count = 0
-i = 0
+# 150-6 Rotate Array
+nums = [1,2,3,4,5,6,7]
+i = 0 
 for x in nums:
-    if count == 0:
-        candidate = x
-    if nums[i] == candidate:
-        count += 1
-    if nums[i] != candidate:
-        count -= 1
+    nums.insert((i + 3) % len(nums), x)
     i += 1
-
-    
+    del nums[i]
