@@ -7,5 +7,3 @@ print(nums[::-1])   # reversed copy of the list
 
 nums[:] = nums[-3:] + nums[:-3]
 print(nums[:])
- 
- 
