@@ -1,13 +1,25 @@
+prices = [7,1,5,3,6,4]
+max = 0
+min = 0
+x = 0
+for i in range(len(prices)):
+    j = i + 1 
+    for j in range(len(prices)):
+        if prices[i] <= prices[j]:
+            min = prices[i]
+            if prices[i] >= prices(j)
+            j += 1
 
-i = [1,2,3,4,5,6,7,8,9,10]
-# m = "1234567"
-# print(m[-3:], m[:-3])
-# print("m[3:]:", m[3:])
-# print("m[:3]:", m[:3])
-
-print("i[-2:]:", i[-2:])
-print("i[:-2]:", i[:-2])
-print("i[-5:]:", i[-5:])
-print("i[:7]:", i[:7])
-print("i[1:]:", i[1:])
-print("i[33:]:", i[3:])
+        else: 
+            min = prices[j]
+            i += 1
+            
+while x < len(prices):
+    y = x + 1
+    while y < len(prices):    
+        if prices[x] >= prices[y]:
+            y += 1
+            max = prices[x]
+        else:
+            max = prices[y]
+            x += 1
