@@ -3,25 +3,19 @@ max = 0
 min = 0
 x = 0
 i = 0
-j = 0
 while i < len(prices):
-    j = i + 1
-    while j < len(prices):
-        if prices[i] < prices[j]:
-            min = prices[i]
-            if i == len(prices)-1:
+    if i < 1 or prices[i] < min:
+        min = prices[i]
+        x = i
+        if i == len(prices)-1:
                 break
-            j += 1
-        else:         
-            min = prices[j]
-            i += 1
-            j += 1
+    i += 1
+
 while x < len(prices):
-    y = x + 1
-    while y < len(prices):    
-        if prices[x] >= prices[y]: 
-            y += 1
-            max = prices[x]
-        else:
-            max = prices[y]
-            x += 1
+    if prices[x] > max: 
+        max = prices[x]
+        if x == len(prices)-1:
+            break
+    x += 1
+
+print(max-min)
