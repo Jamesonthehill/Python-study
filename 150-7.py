@@ -1,4 +1,4 @@
-prices = [2,4,1]
+prices = [1]
 
 # i = 0
 # max = 0
@@ -8,21 +8,24 @@ prices = [2,4,1]
 x = 0
 i = 0
 total = 0
-max = prices[x]
+max = 0
 min = prices[i]
 while i < len(prices):
-    if prices[i] < min:
+    if i < 1 or prices[i] < min:
         min = prices[i]
-        total = max - min
-        x = i
-        if i == len(prices)-1:
-                break
+    if len(prices) == 1:
+        total = 0
+        break
     i += 1
-
-    if prices[x] > max: 
+    x = i
+    if x < 1 or prices[x] > max: 
         max = prices[x]
-        if x == len(prices)-1:
-            break
+        total = max - min
+        if total <= 0:
+            total = 0
+    if x == len(prices)-1:
+        break
+
     x += 1
 print(total)
 
