@@ -1,4 +1,5 @@
-prices = [1]
+#121. Best Time to Buy and Sell Stock
+prices = [7,1,5,3,6,4]
 i = 0
 min = prices[0]
 max = 0
