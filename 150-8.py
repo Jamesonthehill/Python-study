@@ -8,10 +8,12 @@ total_profit = 0
 
 while i < len(prices):
     j = i + 1
-    while j < len(prices):
-        if prices[i] > prices[j]:
-            break
-        else:
-            current_profit = prices[j] - prices[i]
-            total_profit += current_profit 
+    if j == len(prices):
+        break
+    if prices[i] > prices[j]:
+        print('ssss')
+    else:
+        current_profit = prices[j] - prices[i]
+        total_profit += current_profit 
     i += 1
+
