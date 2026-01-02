@@ -16,4 +16,4 @@ for i in range(len(nums)):
     if max_reach >= last_index:
         judge = True
                 
-print(judge) 
+print(judge)  
