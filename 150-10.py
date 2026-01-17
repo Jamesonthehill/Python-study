@@ -3,28 +3,20 @@ i = 0
 nums = [1,2,1,1,1]
 n = len(nums) - 1
 jump_count = 0
-
-
-class Solution:
-    def jump(self, nums: List[int]) -> int:
-        i = 0
-        n = len(nums) - 1
-        jump_count = 0
-        # while i < n-i:
-        for i in range(0, len(nums)-1):
-            
-            if len(nums) == 1 or nums[i] == 0:
-                i = n
-                break
-            
-            if nums[i] + i >= n:
-                jump_count += 1
-                i = len(nums)
-                break
-        
-            else:
-                jump_count += 1
-        
-        return jump_count
+farthest = nums[0]
+while i < len(nums):
     
-print(jump_count)
+    farthest = max(farthest, nums[i])
+
+    if len(nums) == 1 or nums[i] == 0:
+        i = n
+        break
+    
+    if farthest >= n:
+        i = len(nums)
+        break
+
+    jump_count += farthest
+    i += 1 
+
+print(i)
