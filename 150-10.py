@@ -19,9 +19,5 @@ while i < len(nums)-1: # iteration until meeting the requirement.
     if current_end >= n:
         i = len(nums)
         break
-
-    
     i += 1
-
-
 print(jump_count)
