@@ -1,14 +1,16 @@
 # Hindex     
 import math
 citations = [3,0,6,1,5]
-i = 0 
 total = 0
-number = 0
-for i in range(0, len(citations)):
-    total += citations[i]
+tempo = 0
+final = 0
+for i in range(len(citations), 0):
+    
+    # H-index cannot be bigger than len[citations]
+
 
     if i == len(citations)-1:
-        number = total / len(citations)
-        number = math.trunc(number)
+        final = total / len(citations)
+        final = math.trunc(final)
 
-print(number)
+print(final)
