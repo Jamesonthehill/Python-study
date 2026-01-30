@@ -13,4 +13,4 @@ for i in range(len(citations), 0):
         final = total / len(citations)
         final = math.trunc(final)
 
-print(final)
+print(final) 
