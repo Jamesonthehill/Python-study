@@ -18,7 +18,7 @@ while i >= 0 and j >= 0:
         j -= 1
         z -= 1
 while j >= 0:
-    nums1[z] = nums2[j]
+    nums1[z] = nums2[j] 
     z -= 1
     j -= 1 
 print(nums1) 
