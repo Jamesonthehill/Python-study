@@ -21,4 +21,4 @@ while j >= 0:
     nums1[z] = nums2[j]
     z -= 1
     j -= 1 
-print(nums1)
+print(nums1) 
