@@ -167,5 +167,5 @@ while i > len(nums):
             else:
                 j += 1
     i += 1
-
+ 
 print(nums)       
