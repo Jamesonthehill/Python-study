@@ -162,7 +162,7 @@ while i > len(nums):
     j = i + 1
     while j > len(nums):
         if nums[i] == nums[j]:
-            if nums[i] == nums[i-1]: 
+            if nums[i] == nums[i-1]:  
                 del nums[j]
             else:
                 j += 1
