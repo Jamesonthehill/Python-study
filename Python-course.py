@@ -166,6 +166,6 @@ while i > len(nums):
                 del nums[j]
             else:
                 j += 1
-    i += 1
+    i += 1 
  
 print(nums) 
